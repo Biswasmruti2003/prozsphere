@@ -29,9 +29,9 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-[320px] bg-white h-screen border-r border-[#EEEEEE] flex flex-col fixed left-0 top-0 overflow-y-auto">
+    <aside className="w-[220px] bg-white h-screen border-r border-[#EEEEEE] flex flex-col fixed left-0 top-0 overflow-y-auto">
       {/* Logo Section */}
-      <div className="pt-12 pb-10 px-10 flex items-center gap-4">
+      <div className="pt-8 pb-8 px-6 flex items-center gap-3">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#111111"/>
           <path d="M14.5 13C16.433 13 18 11.433 18 9.5C18 7.567 16.433 6 14.5 6C12.567 6 11 7.567 11 9.5C11 11.433 12.567 13 14.5 13Z" fill="#111111"/>
@@ -41,12 +41,12 @@ const Navbar = () => {
       </div>
 
       {/* Menu Label */}
-      <div className="px-10 pb-4">
+      <div className="px-6 pb-3">
         <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Menu</span>
       </div>
 
       {/* Nav Items */}
-      <nav className="flex-1 px-6 space-y-2">
+      <nav className="flex-1 px-3 space-y-1">
         {navItems.map((item, index) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
@@ -54,14 +54,14 @@ const Navbar = () => {
             <Link 
               key={index} 
               href={item.href}
-              className={`flex items-center gap-4 px-6 py-4 rounded-xl text-base font-semibold transition-colors
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-colors
                 ${isActive 
                   ? 'bg-[#5B21B6] text-white' 
                   : 'text-[#4A5568] hover:bg-gray-50'
                 }
               `}
             >
-              <Icon className={isActive ? 'text-white' : 'text-[#4A5568]'} size={24} />
+              <Icon className={isActive ? 'text-white' : 'text-[#4A5568]'} size={20} />
               {item.name}
             </Link>
           );
@@ -69,7 +69,7 @@ const Navbar = () => {
       </nav>
 
       {/* Profile Section */}
-      <div className="p-10 border-t border-[#FAFAFA] mt-auto">
+      <div className="p-6 border-t border-[#FAFAFA] mt-auto">
         <div className="flex items-center gap-4 cursor-pointer">
           <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden shrink-0">
             {/* Using a placeholder SVG or image for Dr. Arjun Mehta */}

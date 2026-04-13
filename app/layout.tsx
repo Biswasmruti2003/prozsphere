@@ -38,7 +38,7 @@ export default function RootLayout({
         <div className="flex bg-[#FAFAFA] min-h-screen">
           <Navbar />
           {/* Main Content Area - offset by sidebar width */}
-          <main className="flex-1 ml-[320px] p-10 max-w-[1600px]">
+          <main className="flex-1 ml-[220px] py-8 px-6 overflow-x-hidden min-w-0">
             {children}
           </main>
         </div>

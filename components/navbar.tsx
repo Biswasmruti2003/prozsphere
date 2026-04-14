@@ -29,7 +29,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-[320px] bg-white h-screen border-r border-[#EEEEEE] flex flex-col fixed left-0 top-0 overflow-y-auto">
+    <aside className="w-[320px] bg-[#FEFEFE] h-screen border-r border-[#E9E9E9] flex flex-col fixed left-0 top-0 overflow-y-auto">
       {/* Logo Section */}
       <div className="pt-12 pb-10 px-10 flex items-center gap-4">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,7 +1,7 @@
 
 export default function DashboardPage() {
   return (
-    <>
+    <div className="p-10">
       {/* Top Stat Cards - 4 Column Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 w-full">
         {/* Card 1 - Upcoming Appointments */}
@@ -39,11 +39,13 @@ export default function DashboardPage() {
             <p className="text-sm text-gray-500 font-medium">Rating</p>
           </div>
         </div>
-      </div>      {/* Middle Section: Chart & Notifications */}
-      <div className="grid grid-cols-1 xl:grid-cols-5 gap-7 gap-y-10 mb-10 w-full">
+      </div>
+
+      {/* Middle Section: Chart & Notifications */}
+      <div className="grid grid-cols-1 xl:grid-cols-6 gap-7 gap-y-10 mb-10 w-full">
 
         {/* Chart Section - Consultation Trends */}
-        <div className="bg-transparent w-full h-[350px] rounded-[13px] px-8 pt-8 pb-19 border border-gray-300 xl:col-span-3 flex flex-col">
+        <div className="bg-transparent w-full  rounded-[13px] px-8 pt-8 pb-19 border border-gray-300 xl:col-span-4 flex flex-col">
           <h2 className="text-[17px] font-bold text-[#374151] mb-6">Consultation Trends (Last 6 Months)</h2>
 
           {/* Chart Container */}
@@ -120,9 +122,9 @@ export default function DashboardPage() {
 
           <div className="flex flex-col gap-4 flex-1">
             {/* Notification 1 - Appointment Request */}
-            <div className="bg-white w-[430px] h-[100px] rounded-2xl px-6 py-7 border border-gray-200 shadow-sm flex flex-col justify-between flex-1 opacity-100 transition-transform hover:-translate-y-1 hover:shadow-md cursor-pointer">
+            <div className="bg-white w-[430px] rounded-2xl px-6 py-7 border border-gray-200 shadow-sm flex flex-col justify-between flex-1 opacity-100 transition-transform hover:-translate-y-1 hover:shadow-md cursor-pointer">
               {/* Time & Icon */}
-              <div className="flex items-center gap-3 text-sm text-gray-500 font-bold tracking-wide">
+              <div className="flex items-center gap-3 text-sm text-gray-500 font-bold tracking-wide mb-3">
                 <div className="w-9 h-9 rounded-full bg-green-50 flex items-center justify-center text-green-600 shrink-0">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><path d="M9 16l2 2 4-4"></path></svg>
                 </div>
@@ -218,6 +220,6 @@ export default function DashboardPage() {
         </div>
       </div>
 
-    </>
+    </div>
   );
 }

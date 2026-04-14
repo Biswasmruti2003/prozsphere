@@ -34,14 +34,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="font-sans antialiased text-[#333333] bg-[#FAFBFC] min-h-screen">
-        <div className="flex bg-[#FAFAFA] min-h-screen">
-          <Navbar />
-          {/* Main Content Area - offset by sidebar width */}
-          <main className="flex-1 ml-[220px] py-8 px-6 overflow-x-hidden min-w-0">
-            {children}
-          </main>
-        </div>
+      <body className="font-sans flex antialiased text-[#333333] bg-[#FAFBFC] h-screen">
+        <Navbar />
+        {/* Main Content Area - offset by sidebar width */}
+        <main className="flex-1 overflow-x-hidden min-w-0">
+          {children}
+        </main>
       </body>
     </html>
   );

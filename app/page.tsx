@@ -184,7 +184,7 @@ export default function DashboardPage() {
                 <td className="py-6 px-6 font-semibold text-gray-500 whitespace-nowrap">(814) 413-9191</td>
                 <td className="py-6 px-6 font-semibold text-gray-500 whitespace-nowrap">Online</td>
                 <td className="py-6 pr-2 pl-6 whitespace-nowrap">
-                  <span className="px-3.5 py-1.5 bg-[#E8F8EE] border border-[#BCE4C8] text-[#1E8E3E] rounded-md text-xs font-bold tracking-wide">Confirmed</span>
+                  <span className="px-3.5 py-1.5 bg-[#D7F7C2] border-[2px] border-[#A6EB84] text-[#1E8E3E] rounded-md text-xs font-bold tracking-wide">Confirmed</span>
                 </td>
               </tr>
 
@@ -196,7 +196,7 @@ export default function DashboardPage() {
                 <td className="py-6 px-6 font-semibold text-gray-500 whitespace-nowrap">(917) 339-6416</td>
                 <td className="py-6 px-6 font-semibold text-gray-500 whitespace-nowrap">In-person</td>
                 <td className="py-6 pr-2 pl-6 whitespace-nowrap">
-                  <span className="px-3.5 py-1.5 bg-[#E8F8EE] border border-[#BCE4C8] text-[#1E8E3E] rounded-md text-xs font-bold tracking-wide">Confirmed</span>
+                  <span className="px-3.5 py-1.5 bg-[#D7F7C2] border-[2px] border-[#A6EB84] text-[#1E8E3E] rounded-md text-xs font-bold tracking-wide">Confirmed</span>
                 </td>
               </tr>
 
@@ -208,7 +208,7 @@ export default function DashboardPage() {
                 <td className="py-6 px-6 font-semibold text-gray-500 whitespace-nowrap">(215) 424-7763</td>
                 <td className="py-6 px-6 font-semibold text-gray-500 whitespace-nowrap">Online</td>
                 <td className="py-6 pr-2 pl-6 whitespace-nowrap">
-                  <span className="px-3.5 py-1.5 bg-[#FFF4E5] border border-[#F6D2A1] text-[#D06F14] rounded-[5px] text-xs font-bold tracking-wide">Awaiting</span>
+                  <span className="px-5 py-1.5 bg-[#FCEDB9]  border-[2px] border-[#FCD579] text-[#D06F14] rounded-[5px] text-xs font-bold tracking-wide">Awaiting</span>
                 </td>
               </tr>
             </tbody>

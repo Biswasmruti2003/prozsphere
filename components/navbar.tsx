@@ -19,9 +19,15 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-[200px] md:w-[240px] lg:w-[260px] xl:w-[280px] 2xl:w-[320px] shrink-0 bg-[#FEFEFE] h-screen border-r border-[#E9E9E9] flex flex-col overflow-y-auto">
-      <div className="pt-8 pb-8 px-6 lg:px-8 flex items-center">
-        <img src="/prozspherelogo.png" alt="Prozsphere Logo" className="w-auto h-8 md:h-8 object-contain" />
+    <aside className="w-[320px] bg-[#FCFDFF] h-screen border-r border-[#E9E9E9] flex flex-col  overflow-y-auto">
+      {/* Logo Section */}
+      <div className="pt-8 pb-8 px-6 flex items-center gap-3">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#111111"/>
+          <path d="M14.5 13C16.433 13 18 11.433 18 9.5C18 7.567 16.433 6 14.5 6C12.567 6 11 7.567 11 9.5C11 11.433 12.567 13 14.5 13Z" fill="#111111"/>
+          <path d="M9.5 18C11.433 18 13 16.433 13 14.5C13 12.567 11.433 11 9.5 11C7.567 11 6 12.567 6 14.5C6 16.433 7.567 18 9.5 18Z" fill="white"/>
+        </svg>
+        <span className="font-extrabold text-[#111] text-2xl tracking-wide">PROZSPHERE</span>
       </div>
 
       {/* Menu Label */}

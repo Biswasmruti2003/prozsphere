@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/footer";
+import Heading from "@/components/heading";
 import PatientDetails from "@/components/patientDetails";
 import { useState } from "react";
 import { LiaFilterSolid } from "react-icons/lia";
@@ -84,7 +85,8 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen font-inter relative">
-      <PatientDetails heading={heading} />
+      <Heading heading={heading}/>
+      <PatientDetails  />
       {/* Table */}
       <div className=" overflow-hidden">
         <table className="w-full text-left ">
@@ -102,10 +104,10 @@ export default function Dashboard() {
           <tbody>
             {patientsData.map((p, index) => (
               <tr key={index} className="border-t border-[#EEEFF2] text-[15px] font-[600] leading-[150%] tracking-[0.3px]">
-                <td className="py-5 px-10 ">{p.name}</td>
-                <td className="py-5 px-10">{p.service}</td>
-                <td className="py-5 px-10">{p.last}</td>
-                <td className="py-5 px-10">{p.follow !== null ? p.follow : (<div className="w-[15px] border"></div>)}</td>
+                <td className="py-4 px-10 ">{p.name}</td>
+                <td className="py-4 px-10">{p.service}</td>
+                <td className="py-4 px-10">{p.last}</td>
+                <td className="py-4 px-10">{p.follow !== null ? p.follow : (<div className="w-[15px] border"></div>)}</td>
                 <td className="">
                   <div
                     className={`text-center rounded-md  text-[12px] ${getStatusStyle(

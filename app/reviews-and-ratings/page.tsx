@@ -1,6 +1,7 @@
 "use client"
 
 import Footer from "@/components/footer";
+import Heading from "@/components/heading";
 import PatientDetails from "@/components/patientDetails";
 import { BiSolidStar } from "react-icons/bi";
 
@@ -59,8 +60,9 @@ const reviews = [
 
 export default function ReviewsRatingsPage() {
   return (
-    <div className="min-h-screen font-inter relative">
-      <PatientDetails heading={heading} />
+    <div className="relative">
+      <Heading heading={heading}/>
+      <PatientDetails  />
       <div className="px-10 ">
         <div className="grid grid-cols-3 gap-6">
           {reviews.map((review, i) => (

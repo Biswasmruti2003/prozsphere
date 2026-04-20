@@ -26,7 +26,7 @@ export default function Footer() {
     };
 
     return (
-        <div className="w-full p-10 absolute bottom-0 flex justify-between items-center p-4 text-sm text-gray-600">
+        <div className="w-full p-10 absolute flex justify-between items-center p-4 text-sm text-gray-600">
             <div className="text-[14px] text-[#404040] font-[500]">
                 Show result:
                 <span className="ml-3 py-3 px-3 border rounded-lg ">

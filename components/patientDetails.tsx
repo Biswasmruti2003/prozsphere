@@ -13,30 +13,15 @@ const cards = [
 ]
 
 
-export default function PatientDetails({heading}:any) {
+export default function PatientDetails() {
     return (
             <div className="p-10">
-                <div className="flex justify-between items-center mb-8">
-                    <h1 className="text-[#000000] font-[700] text-[30px]">{heading}</h1>
-                    <div className="flex gap-3 items-center">
-                        <div className="flex items-center text-[14px] gap-2 p-2  border  rounded-md text-[#A3ACBA] font-[500] ">
-                            <RiSearch2Line className="text-xl" />
-                            <input
-                                type="text"
-                                placeholder="Search by ID, Name or phone..."
-                                className="outline-none w-54"
-                            />
-                        </div>
-                        <button className="border-2 border-[#5F259E] text-[#5F259E] px-4 py-2 text-[14px] rounded-md flex items-center gap-2"><LiaFilterSolid className="h-5 w-5" />Filters</button>
-                    </div>
-                </div>
-
                 {/* Top Cards */}
                 <div className="grid grid-cols-4 gap-6 ">
                     {cards.map((card, i) => {
                         let Icon = card.icon;
                         return (
-                            <div key={i} className="h-[160px] bg-white p-5 rounded-xl border-[2px] border-[#E9E9E9] flex flex-col justify-between"  >
+                            <div key={i} className="min-h-[160px] bg-white p-5 rounded-xl border-[2px] border-[#E9E9E9] flex flex-col justify-between"  >
                                 <div className="flex">
                                     <div className="border-2 border-[#E9E9E9] inline rounded-full p-1" >
                                         <Icon className="text-[23px] font-'[900]" style={{ color: card.color }} />

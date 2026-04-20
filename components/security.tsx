@@ -1,8 +1,8 @@
 import { GoPencil } from "react-icons/go";
 
-export default function Security () {
-    return (
-        <div className="p-10 max-w-4xl ">
+export default function Security() {
+  return (
+    <div className="p-10 max-w-4xl ">
       <h1 className="text-2xl font-bold mb-10">Security & Login</h1>
 
       <div className="space-y-12">
@@ -55,5 +55,5 @@ export default function Security () {
         </div>
       </div>
     </div>
-    )
+  )
 }

@@ -1,8 +1,8 @@
 "use client";
 
-import Footer from "@/components/footer";
-import Heading from "@/components/heading";
-import PatientDetails from "@/components/patientDetails";
+import Footer from "@/components/Footer";
+import Heading from "@/components/Heading";
+import PatientDetails from "@/components/PatientDetails";
 import { useState } from "react";
 import { LiaFilterSolid } from "react-icons/lia";
 import { PiCalendarCheck } from "react-icons/pi";

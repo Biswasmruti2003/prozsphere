@@ -1,15 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Pencil } from "lucide-react";
-import { RiDeleteBinFill, RiEditBoxFill } from "react-icons/ri";
-import { IoIosArrowDown } from "react-icons/io";
-import { GoPencil } from "react-icons/go";
-import { BiUpload } from "react-icons/bi";
-import { FaCheck } from "react-icons/fa";
-import Profile from "@/components/profile";
-import Security from "@/components/security";
-import Professional from "@/components/professional";
+import Security from "@/components/Security";
+import Professional from "@/components/Professional";
+import NotificationPreference from "@/components/NotificationPreference";
+import Profile from "@/components/Profile";
 
 export default function AccountSettings() {
   const [activeTab, setActiveTab] = useState("profile");
@@ -50,6 +45,7 @@ export default function AccountSettings() {
         {activeTab === "profile" && <Profile />}
         {activeTab === "security" && <Security />}
         {activeTab === "professional" && <Professional />}
+        {activeTab === "notifications" && <NotificationPreference />}
       </div>
     </div>
   );

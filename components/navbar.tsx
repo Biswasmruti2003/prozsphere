@@ -3,20 +3,25 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { RiCalendarEventLine, RiChat1Line, RiGroupLine, RiHeartAddLine } from "react-icons/ri";
 
 // ── Import the profile dropdown card ──────────────────────────────────────────
 import UserProfileDropdown from './user';
+import { MdDashboard } from 'react-icons/md';
+import { LuCircleDollarSign } from 'react-icons/lu';
+import { IoIosStarOutline } from 'react-icons/io';
+import { IoSettingsOutline } from 'react-icons/io5';
 
 // ── Navigation items ──────────────────────────────────────────────────────────
 const navItems = [
-  { name: 'Dashboard',            icon: '/navlogo0.png', href: '/' },
-  { name: 'Service Management',   icon: '/navlogo1.png', href: '/service-management' },
-  { name: 'Client Engagement',    icon: '/navlogo2.png', href: '/client-engagement' },
-  { name: 'Messages',             icon: '/navlogo3.png', href: '/messages' },
-  { name: 'Payments & Earnings',  icon: '/navlogo4.png', href: '/payments-and-earnings' },
-  { name: 'Reviews & Ratings',    icon: '/navlogo5.png', href: '/reviews-and-ratings' },
-  { name: 'Calendar',             icon: '/navlogo6.png', href: '/calendar' },
-  { name: 'Account Settings',     icon: '/navlogo7.png', href: '/account-settings' },
+  { name: 'Dashboard', icon: MdDashboard, href: '/' },
+  { name: 'Service Management', icon: RiHeartAddLine, href: '/service-management' },
+  { name: 'Client Engagement', icon: RiGroupLine, href: '/client-engagement' },
+  { name: 'Messages', icon: RiChat1Line, href: '/messages' },
+  { name: 'Payments & Earnings', icon: LuCircleDollarSign, href: '/payments-and-earnings' },
+  { name: 'Reviews & Ratings', icon: IoIosStarOutline, href: '/reviews-and-ratings' },
+  { name: 'Calendar', icon: RiCalendarEventLine, href: '/calendar' },
+  { name: 'Account Settings', icon: IoSettingsOutline, href: '/account-settings' },
 ];
 
 // ── Navbar component ──────────────────────────────────────────────────────────
@@ -59,22 +64,16 @@ const Navbar = () => {
         <nav className="flex-1 px-4 lg:px-6 space-y-1">
           {navItems.map((item, index) => {
             const isActive = pathname === item.href;
+            let Icon = item.icon
             return (
               <Link
                 key={index}
                 href={item.href}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-colors
-                  ${isActive
-                    ? 'bg-[#5B21B6] text-white'
-                    : 'text-[#4A5568] hover:bg-gray-50'
-                  }
+                className={`flex items-center gap-2 px-4 py-3 rounded-xl text-md font-semibold transition-colors
+                  ${isActive ? 'bg-[#5B21B6] text-white' : 'text-[#4A5568] hover:bg-gray-50'}
                 `}
               >
-                <img
-                  src={item.icon}
-                  alt={item.name}
-                  className={`w-5 h-5 object-contain ${isActive ? 'brightness-0 invert' : ''}`}
-                />
+                <span className={`${isActive ? 'bg-[#5B21B6] text-white' : 'text-[#3C3C3C] hover:bg-gray-100'}`}><Icon size={22} /></span>
                 {item.name}
               </Link>
             );

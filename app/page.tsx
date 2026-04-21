@@ -1,7 +1,7 @@
 
 export default function DashboardPage() {
   return (
-    <div className="w-full p-6 lg:p-8 xl:p-10">
+    <div className="max-w-7xl p-6 lg:p-8 xl:p-10">
       {/* Top Stat Cards - 4 Column Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 w-full">
         {/* Card 1 - Upcoming Appointments */}

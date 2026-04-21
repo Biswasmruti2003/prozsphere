@@ -9,7 +9,7 @@ export default function MessagesPage() {
   ];
 
   return (
-    <div className="flex w-full h-full bg-[#FAFAF9]">
+    <div className="flex  w-full h-full bg-[#FAFAF9]">
       <div className="w-[380px] xl:w-[450px] bg-white border-r border-[#E9E9E9] flex flex-col h-full shrink-0">
         <div className="px-8 pt-6 pb-4">
           <h1 className="text-[32px] font-bold text-[#111111] mb-4 tracking-tight">Messages</h1>

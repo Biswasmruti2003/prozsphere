@@ -1,7 +1,11 @@
 
 export default function DashboardPage() {
   return (
+<<<<<<< HEAD
     <div className="max-w-7xl p-6 lg:p-8 xl:p-10">
+=======
+    <div className=" max-w-7xl  p-6 lg:p-8 xl:p-10">
+>>>>>>> 2a87c34a639c80f41cc57435f9d85dcf98df0a66
       {/* Top Stat Cards - 4 Column Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 w-full">
         {/* Card 1 - Upcoming Appointments */}
@@ -34,7 +38,7 @@ export default function DashboardPage() {
         {/* Card 4 - Rating */}
         <div className="w-full min-h-[150px] rounded-2xl p-6 border border-gray-300 flex flex-col justify-between">
           <img src="/card4.png" alt="Rating" className="w-8 h-9 object-contain" />
-          <div className="flex flex-col gap-2 mt-3 overflow-hidden">
+          <div className="flex flex-col gap-2 mt-3 ">
             <h3 className="text-xl lg:text-2xl font-bold text-gray-900 whitespace-nowrap truncate">4.7 (125 Reviews)</h3>
             <p className="text-sm text-gray-500 font-medium">Rating</p>
           </div>
